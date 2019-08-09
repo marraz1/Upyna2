@@ -3,3 +3,4 @@ How to use Git
 2. https://github.com/rtyley/bfg-repo-cleaner/issues/29
 3. https://help.github.com/en/articles/setting-your-username-in-git
 4. https://git-scm.com/book/en/v1/Git-Basics-Viewing-the-Commit-History
+Labas
