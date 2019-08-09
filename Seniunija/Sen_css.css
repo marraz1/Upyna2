@@ -1,0 +1,20 @@
+/* Large rounded green border */
+hr.new5 {
+  border: 2px solid green;
+  border-radius: 2px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+a.thick {
+  font-weight: bold;
+}
+a.normal {
+  font-weight: normal;
+}
