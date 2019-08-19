@@ -1,6 +1,8 @@
-Kolkas upynoje darbo  nėra.
 
-<h2>Darbo skelbimai</h2>
+<html>
+    <head>
+      <title>Darbo skelbimai</title>
+</head>
   <script src="Gyventojams/ajax/jquery.fancybox.min.js"></script>
 <style>
 
@@ -22,17 +24,20 @@ img.zoom {
     transform: scale(1.2);
 }
 </style>
+<body>
+Kolkas upynoje darbo  nėra.
 
+<h2>Darbo skelbimai</h2>
 <div class="row">
 <form action="" method="POST">
 <?php
-$dir = new DirectoryIterator("Miestelis/Renginiu_galerija/");
+$dir = new DirectoryIterator("Gyventojams/Darbo skelbimai/");
 foreach ($dir as $fileinfo) {
     if ($fileinfo->isDir() && !$fileinfo->isDot()) {
         //echo $fileinfo->getFilename().'<br>';
         ?>
 
-        <input type="submit" id="btnSubmit" name="btnSubmit" value="<?php echo $fileinfo->getFilename() ?>" /><?php
+        <input type="submit" id="btnSubmit" name="btnSubmit" value="<?php echo $fileinfo->getFilename() ?>" class="btn btn-success"/><?php
     }
 }
 ?></form></div><div class="row">
@@ -80,7 +85,8 @@ foreach($images as $image) {
     </div>
   </div>
 </div>
-
+</body>
+</html>
 <script>
 let modalId = $('#image-gallery');
 

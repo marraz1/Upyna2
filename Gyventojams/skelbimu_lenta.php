@@ -1,5 +1,9 @@
 
-<h2>Skelbimų galerija</h2>
+
+<html>
+    <head>
+      <title>Skelbimų galerija</title>
+</head>
 <style>
 
 #demo {
@@ -56,22 +60,25 @@ img.zoom {
  <!--<link rel="stylesheet" href="ajax/jquery.fancybox.min.css" media="screen">
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>-->
   <script src="Gyventojams/ajax/jquery.fancybox.min.js"></script>
+
+  <body>
+<h2>Skelbimų galerija</h2>
   <div class="row">
 
     <form action="" method="POST">
     <?php
-    $dir = new DirectoryIterator("Miestelis/Renginiu_galerija/");
+    $dir = new DirectoryIterator("Gyventojams/Skelbimai/");
     foreach ($dir as $fileinfo) {
         if ($fileinfo->isDir() && !$fileinfo->isDot()) {
             //echo $fileinfo->getFilename().'<br>';
             ?>
 
-            <input type="submit" id="btnSubmit" name="btnSubmit" value="<?php echo $fileinfo->getFilename() ?>" /><?php
+            <input type="submit" id="btnSubmit" name="btnSubmit" value="<?php echo $fileinfo->getFilename() ?>" class="btn btn-success"/><?php
         }
     }
     ?></form><br></div>
-    <!-- Page Content -->
-   <div class="container page-top">
+    <!-- Page Content <div class="container page-top"> -->
+   <div class="container ">
         <div class="row">
           <?php
              if (isset($_POST["btnSubmit"]))
@@ -152,7 +159,8 @@ img.zoom {
 
 
     </div>
-
+  </body>
+  </html>
 <script>
 $(document).ready(function(){
   $(".fancybox").fancybox({

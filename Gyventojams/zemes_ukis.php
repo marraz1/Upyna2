@@ -1,5 +1,11 @@
 
-<h2>Parduodama žemės ukio technika:</h2>
+
+<html>
+    <head>
+      <title>Parduodama žemės ūkio technika</title>
+    </head>
+      <body>
+<h2>Parduodama žemės ūkio technika</h2>
 <div class="row">
 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
@@ -70,7 +76,8 @@
     </div>
   </div>
 </div>
-
+</body>
+</html>
 <script>
 let modalId = $('#image-gallery');
 

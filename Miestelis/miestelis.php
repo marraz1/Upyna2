@@ -1,3 +1,8 @@
+<html>
+    <head>
+      <title>Miestelis</title>
+		</head>
+      <body>
 <div id="content" class="mw-body" role="main">
 
 
@@ -196,3 +201,5 @@
 
 	</div>
 </div>
+</body>
+</html>

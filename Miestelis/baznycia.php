@@ -1,3 +1,10 @@
+<html>
+    <head>
+      <title>Bažnyčia</title>
+		</head>
+      <body>
+
+
 <div id="content" class="mw-body" role="main">
 	<a id="top"></a>
 	<h1 id="firstHeading" class="firstHeading" lang="lt">Upynos Švč. Mergelės Marijos Vardo bažnyčia</h1>
@@ -121,3 +128,5 @@
 <li>Kun. Vytautas Šiaudvytis 2016 - </li></ul>
 	</div>
 </div>
+</body>
+</html>

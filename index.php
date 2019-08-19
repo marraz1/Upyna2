@@ -99,7 +99,7 @@
                       <ul class="dropdown-menu ">
                        <li><a href="?10" name="link10" class="dropdown-item btn-change">Skelbimų lenta</a></li>
                        <li><a href="?11" name="link11" class="dropdown-item btn-change">Darbo skelbimai</a></li>
-                       <li><a href="?12" name="link12" class="dropdown-item btn-change">Žemės ukis</a></li>
+                       <li><a href="?12" name="link12" class="dropdown-item btn-change">Parduodama technika</a></li>
                      </ul>
                      </div>
                   </li>

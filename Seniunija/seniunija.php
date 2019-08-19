@@ -13,7 +13,7 @@
         </div>
 
         <b>Seniūnaitijos</b>
-        2009 m. įsteigtos 7 seniūnaitijos:
+        2009 m. įsteigtos 7 seniūnaitijos:<br>
 
         <b>Lingių seniūnaitija (centras – Dvyliškės II k.):</b> Dvyliškės I k., Dvyliškės II k., Lingių k., Lingių Fermų k. <br>
         <b>Naujojo Obelyno seniūnaitija:</b> Naujojo Obelyno k., Negėrų k., Senojo Obelyno k., Rusų Obelyno k., Rudalių k., Pabremenio k. <br>
