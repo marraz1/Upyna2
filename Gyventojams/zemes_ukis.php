@@ -91,24 +91,48 @@
 
         <div class="row">
           <div class="col-lg-3">
-            <h2>Technikos duomenys:</h2>
-            <p> Pavadinimas </p>
-            <p> Paskirtis </p>
-            <p> Kaina </p>
-          </div>
-          <div class="offset-1 col-lg-8">
-            <h2>Technikos aprašymas</h2>
-            <p> See php installation instructions at https://github.com/Glavin001/atom-beautify#beautifiers or go to http://php.net/manual/en/install.php
-You can configure Atom Beautify with the absolute path to 'php' by setting 'Executable - PHP - Path' in the Atom Beautify package settings.
-Your program is properly installed if running 'where.exe php' in your CMD prompt returns an absolute path to the executable. </p>
+            <?php
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "upyna";
 
-          </div>
+                    // Create connection
+                $conn = mysqli_connect($servername, $username, $password, $dbname);
 
+                // Check connection
+                if (!$conn) {
+                  die("Connection failed: " . mysqli_connect_error());
+                }
+                else {
+                //echo "Connected successfully";
+                $conn->query("SET NAMES 'utf8'");
+                }
+
+
+                $sql = "SELECT pavadinimas, paskirtis, kaina, aprasymas, telefonas, id FROM z_technika where id = '1'";
+                $result = mysqli_query($conn, $sql);
+
+                if (mysqli_num_rows($result) > 0) {
+                  $row = mysqli_fetch_assoc($result)
+                    ?>
+                    <h2>Technikos duomenys:</h2>
+                    <strong>Technikos pavadinimas: </strong><?php echo $row["pavadinimas"]?><br>
+                    <strong>Paskirtis: </strong><?php echo $row["paskirtis"]?><br>
+                    <strong>Kaina: </strong><?php echo $row["kaina"]?><br>
+                    <strong>Telefonas: </strong><?php echo $row["telefonas"]?><br>
+                      </div>
+                      <div class="offset-1 col-lg-8">
+                        <h2>Technikos aprašymas</h2>
+                        <strong>Aprašymas: </strong><?php echo $row["aprasymas"]?><br>
+                      </div>
+                    <?php
+                  } else {
+                  echo "0 results";
+                }
+                mysqli_close($conn);
+                ?>
         </div>
-
-
-
-
       </div>
     </div>
   </div>
