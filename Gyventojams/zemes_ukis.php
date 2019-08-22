@@ -3,11 +3,26 @@
 <html>
     <head>
       <title>Parduodama žemės ūkio technika</title>
+      <style>
+      .btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  #image-gallery .modal-footer{
+    display: block;
+  }
+
+  .thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  </style>
     </head>
       <body>
 <h2>Parduodama žemės ūkio technika</h2>
 <div class="row">
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
 <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
    data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
    data-target="#image-gallery">
@@ -72,9 +87,33 @@
 
         <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
         </button>
+        <br><br>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <h2>Technikos duomenys:</h2>
+            <p> Pavadinimas </p>
+            <p> Paskirtis </p>
+            <p> Kaina </p>
+          </div>
+          <div class="offset-1 col-lg-8">
+            <h2>Technikos aprašymas</h2>
+            <p> See php installation instructions at https://github.com/Glavin001/atom-beautify#beautifiers or go to http://php.net/manual/en/install.php
+You can configure Atom Beautify with the absolute path to 'php' by setting 'Executable - PHP - Path' in the Atom Beautify package settings.
+Your program is properly installed if running 'where.exe php' in your CMD prompt returns an absolute path to the executable. </p>
+
+          </div>
+
+        </div>
+
+
+
+
       </div>
     </div>
   </div>
+</div>
+
 </div>
 </body>
 </html>
@@ -171,4 +210,5 @@ default:
 }
 e.preventDefault(); // prevent the default action (scroll / move caret)
 });
+
 </script>
